@@ -1,6 +1,7 @@
 'use client';
 import { Github, Twitter, Instagram, ChevronDown } from 'lucide-react';
 import { useEffect } from 'react';
+import { Button } from './ui/button';
 
 export default function Hero() {
   useEffect(() => {
@@ -39,70 +40,59 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className='w-full mt-32 md:mt-40 flex items-center justify-center px-4 relative overflow-hidden'>
+    <section className='w-full h-dvh flex items-center justify-center px-4 relative overflow-hidden mt-15'>
       {/* === BACKGROUND ELEMENTS === */}
       <div className='absolute top-20 left-10 w-72 h-72 bg-green-400 rounded-full opacity-15 blur-3xl'></div>
       <div className='absolute bottom-20 right-10 w-96 h-96 bg-green-400 rounded-full opacity-10 blur-3xl'></div>
 
       {/* Floating code symbols */}
-      <span className='absolute top-[15%] left-[10%] text-gray-400/10 text-7xl font-mono select-none float-slow'>
+      <span className='absolute top-[15%] left-[10%] text-secondary-foreground/10 text-7xl font-mono select-none float-slow'>
         {'{'}
       </span>
-      <span className='absolute bottom-[20%] right-[15%] text-gray-400/10 text-8xl font-mono rotate-12 select-none float-slow'>
+      <span className='absolute bottom-[20%] right-[15%] text-secondary-foreground/10 text-8xl font-mono rotate-12 select-none float-slow'>
         {'}'}
       </span>
-      <span className='absolute top-[40%] right-[5%] text-gray-400/10 text-6xl font-mono -rotate-6 select-none float-slow'>
+      <span className='absolute top-[20%] right-[5%] text-secondary-foreground/10 text-6xl font-mono -rotate-6 select-none float-slow'>
         {'();'}
       </span>
-      <span className='absolute bottom-[10%] left-[20%] text-gray-400/10 text-7xl font-mono rotate-3 select-none float-slow'>
+      <span className='absolute bottom-[20%] left-[20%] text-secondary-foreground/10 text-7xl font-mono rotate-3 select-none float-slow'>
         {'<>'}
       </span>
-      <span className='absolute top-[5%] right-[30%] text-gray-400/10 text-8xl font-mono rotate-6 select-none float-slow'>
+      {/* <span className='absolute top-[10%] right-[20%] text-secondary-foreground/10 text-7xl font-mono rotate-6 select-none float-slow'>
         {'[]'}
-      </span>
+      </span> */}
 
       {/* === HERO CONTENT === */}
       <div className='w-full text-center relative z-10'>
         {/* Status Badge */}
         <div className='flex items-center justify-center mb-8'>
-          <div className='flex items-center gap-2 border border-gray-200 rounded-full px-4 py-2 bg-white/40 backdrop-blur-sm'>
-            <div className='w-2 h-2 bg-green-600 rounded-full animate-pulse'></div>
-            <span className='text-sm font-medium text-gray-700'>
-              Available for a new project
-            </span>
+          <div className='flex items-center gap-2 border border-input rounded-full px-4 py-2 backdrop-blur'>
+            <div className='size-2 bg-green-600 rounded-full animate-pulse'></div>
+            <span className='text-sm'>Available for a new project</span>
           </div>
         </div>
 
         {/* Main Heading */}
-        <h1 className='text-5xl md:text-6xl font-bold mb-4 text-gray-900'>
-          Hey, I’m <span className='text-gray-900'>Yusuf Adeyemi</span>
+        <h1 className='text-5xl md:text-6xl font-semibold mb-4 text-primary'>
+          Hey, I’m Yusuf Adeyemi
         </h1>
 
-        {/* Subheading (kept as requested) */}
-        <p className='text-2xl md:text-3xl font-medium text-gray-600 mb-2'>
+        <p className='text-2xl md:text-3xl mb-2 text-primary/80'>
           {/* Software Engineer */}
           Fullstack Developer
         </p>
 
         {/* Tagline */}
-        <p className='text-md text-gray-500 mb-12 max-w-xl mx-auto leading-relaxed'>
+        <p className='mb-8 max-w-xl mx-auto leading-relaxed'>
           Turning ideas into seamless digital experiences.
         </p>
 
         {/* CTA Buttons */}
         <div className='flex flex-col sm:flex-row items-center justify-center gap-4 mb-12'>
-          <a
-            href='#projects'
-            className='px-8 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-all duration-300 hover:shadow-lg active:scale-95'
-          >
-            View My Work
-          </a>
-          <a
-            href='#contact'
-            className='px-8 py-3 border-2 border-gray-300 text-gray-900 font-medium rounded-lg hover:border-gray-900 hover:bg-gray-50 transition-all duration-300'
-          >
+          <Button className='py-6 px-10'>View My Work</Button>
+          <Button className='py-6 px-10' variant='outline'>
             Get in Touch
-          </a>
+          </Button>
         </div>
 
         {/* Social Icons */}
@@ -111,40 +101,43 @@ export default function Hero() {
             href='https://github.com'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-gray-600 hover:text-gray-900 transition-transform duration-300 hover:scale-110'
+            className='text-secondary-foreground hover:text-secondary-foreground/90 transition-transform duration-300 hover:scale-110'
             aria-label='GitHub'
           >
-            <Github size={24} />
+            <Github size={30} />
           </a>
           <a
             href='https://x.com'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-gray-600 hover:text-gray-900 transition-transform duration-300 hover:scale-110'
+            className='text-secondary-foreground hover:text-secondary-foreground/90 transition-transform duration-300 hover:scale-110'
             aria-label='X'
           >
-            <Twitter size={24} />
+            <Twitter size={30} />
           </a>
           <a
             href='https://instagram.com'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-gray-600 hover:text-gray-900 transition-transform duration-300 hover:scale-110'
+            className='text-secondary-foreground hover:text-secondary-foreground/90 transition-transform duration-300 hover:scale-110'
             aria-label='Instagram'
           >
-            <Instagram size={24} />
+            <Instagram size={30} />
           </a>
         </div>
 
         {/* Modern Scroll Indicator */}
-        <div className='mx-auto w-[42px] h-[66px] mt-20 rounded-[28px] border-2 border-gray-300 flex items-start justify-center p-2'>
+        <div className='mx-auto w-[42px] h-[66px] mt-20 rounded-[28px] border-2 border-secondary-foreground/10  flex items-start justify-center p-2'>
           {/* animated dot */}
-          <div className='size-2 rounded-full bg-green-200 scroll-dot' />
+          <div className='size-2 rounded-full bg-secondary-foreground/10  scroll-dot' />
         </div>
 
         {/* little subtle chevron for extra hint (non-distracting) */}
         <div className='mt-3 flex items-center justify-center gap-2 opacity-70'>
-          <ChevronDown size={20} className='text-gray-400 gentle-bounce' />
+          <ChevronDown
+            size={30}
+            className='text-secondary-foreground/10  gentle-bounce'
+          />
         </div>
       </div>
     </section>

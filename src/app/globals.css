@@ -86,10 +86,10 @@
 }
 
 @layer base {
-  * {
-    scrollbar-width: 0;
+  *::-webkit-scrollbar {
+    @apply hidden;
   }
   body {
-    @apply bg-background text-primary;
+    @apply bg-background text-secondary-foreground/70;
   }
 }

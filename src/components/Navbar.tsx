@@ -11,11 +11,11 @@ export default function Navbar() {
             <Link
               href={`#${link.href}`}
               className="
-                text-gray-600 hover:text-gray-800 
+                 hover:text-secondary-foreground/90 
                 transition-colors duration-200
                 relative font-medium
                 after:content-[''] after:absolute after:left-0 after:-bottom-[4px] after:w-0 after:h-[1.6px] 
-                after:bg-gray-800 after:transition-all after:duration-200 
+                after:bg-secondary-foreground after:transition-all after:duration-200 
                 hover:after:w-full
               "
             >

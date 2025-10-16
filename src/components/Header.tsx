@@ -8,8 +8,8 @@ export default function Header() {
     <header className='fixed top-0 left-0 w-full z-50 mt-4'>
       <div
         className='flex items-center justify-between mx-auto w-11/12 lg:w-full max-w-7xl 
-    bg-gradient-to-r from-gray-50/50 to-white/30 backdrop-blur 
-    py-2 lg:py-4 px-4 border rounded-xl border-gray-200 
+    bg-gradient-to-r from-background/50 to-background/30 backdrop-blur 
+    py-2 lg:py-4 px-4 border rounded-xl border-input 
     shadow-[0_4px_24px_rgba(0,0,0,0.04)] transition-all'
       >
         <Logo />
