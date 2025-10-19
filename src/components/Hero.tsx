@@ -1,141 +1,67 @@
-"use client";
-import { Github, Twitter, Instagram, ChevronDown } from "lucide-react";
-import { useEffect } from "react";
+import { ChevronDown, Dot } from "lucide-react";
 import { Button } from "./ui/button";
+import SocialIcons from "./SocialIcons";
 
 export default function Hero() {
-  useEffect(() => {
-    const style = document.createElement("style");
-    style.innerHTML = `
-      @keyframes float {
-        0%,100% { transform: translateY(0) rotate(0deg); }
-        50% { transform: translateY(-10px) rotate(2deg); }
-      }
-      .float-slow { animation: float 6s ease-in-out infinite; }
-
-      @keyframes scroll-dot {
-        0% { transform: translateY(-6px); opacity: 0; }
-        10% { opacity: 1; }
-        50% { transform: translateY(6px); opacity: 1; }
-        90% { opacity: 0; }
-        100% { transform: translateY(-6px); opacity: 0; }
-      }
-      .scroll-dot { animation: scroll-dot 1.6s infinite cubic-bezier(.22,.9,.32,1); }
-
-      @keyframes gentle-bounce {
-        0%,100% { transform: translateY(0); }
-        50% { transform: translateY(-6px); }
-      }
-      .gentle-bounce { animation: gentle-bounce 2.8s ease-in-out infinite; }
-
-      /* tiny accessibility improvement: prefers-reduced-motion */
-      @media (prefers-reduced-motion: reduce) {
-        .float-slow, .scroll-dot, .gentle-bounce { animation: none; }
-      }
-    `;
-    document.head.appendChild(style);
-    return () => {
-      document.head.removeChild(style);
-    };
-  }, []);
-
   return (
-    <section className="relative mt-20 flex w-full items-center justify-center overflow-hidden px-4">
-      {/* === BACKGROUND ELEMENTS === */}
-      <div className="absolute top-20 left-10 h-72 w-72 rounded-full bg-green-400 opacity-15 blur-3xl"></div>
-      <div className="absolute right-10 bottom-20 h-96 w-96 rounded-full bg-green-400 opacity-10 blur-3xl"></div>
+    <section className="relative min-h-dvh px-4 pt-30 lg:pt-40">
+      {/* Background touches */}
+      <>
+        <div className="absolute top-28 left-10 h-48 w-48 rounded-full bg-green-400 opacity-15 blur-3xl sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72 dark:bg-green-300"></div>
+        <div className="absolute right-10 bottom-20 h-64 w-64 rounded-full bg-green-400 opacity-10 blur-3xl sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96 dark:bg-green-300"></div>
+      </>
 
       {/* Floating code symbols */}
-      <span className="text-secondary-foreground/10 float-slow absolute top-[15%] left-[10%] font-mono text-7xl select-none">
-        {"{"}
-      </span>
-      <span className="text-secondary-foreground/10 float-slow absolute right-[15%] bottom-[20%] rotate-12 font-mono text-8xl select-none">
-        {"}"}
-      </span>
-      <span className="text-secondary-foreground/10 float-slow absolute top-[20%] right-[5%] -rotate-6 font-mono text-6xl select-none">
-        {"();"}
-      </span>
-      <span className="text-secondary-foreground/10 float-slow absolute bottom-[20%] left-[20%] rotate-3 font-mono text-7xl select-none">
-        {"<>"}
-      </span>
-      {/* <span className='absolute top-[10%] right-[20%] text-secondary-foreground/10 text-7xl font-mono rotate-6 select-none float-slow'>
-        {'[]'}
-      </span> */}
+      <>
+        <span className="text-primary/10 float-slow absolute top-[18%] left-[8%] font-mono text-4xl select-none sm:text-5xl md:text-6xl lg:text-7xl">
+          {"{"}
+        </span>
+        <span className="text-primary/10 float-slow absolute right-[12%] bottom-[15%] rotate-12 font-mono text-5xl select-none sm:text-6xl md:text-7xl lg:text-8xl">
+          {"}"}
+        </span>
+        <span className="text-primary/10 float-slow absolute top-[30%] right-[8%] -rotate-6 font-mono text-3xl select-none sm:text-4xl md:text-5xl lg:text-6xl">
+          {"();"}
+        </span>
+        <span className="text-primary/10 float-slow absolute bottom-[25%] left-[15%] rotate-3 font-mono text-4xl select-none sm:text-5xl md:text-6xl lg:text-7xl">
+          {"<>"}
+        </span>
+        <span className="text-primary/10 float-slow absolute top-[13%] right-[25%] rotate-6 font-mono text-4xl select-none sm:text-5xl md:text-6xl lg:text-7xl">
+          {"[]"}
+        </span>
+      </>
 
-      {/* === HERO CONTENT === */}
-      <div className="relative z-10 w-full text-center">
-        {/* Status Badge */}
-        <div className="mb-8 flex items-center justify-center">
-          <div className="border-input flex items-center gap-2 rounded-full border px-4 py-2 backdrop-blur">
-            <div className="size-2 animate-pulse rounded-full bg-green-600"></div>
-            <span className="text-sm">Available for a new project</span>
+      <div className="flex flex-col items-center justify-center space-y-14">
+        <div className="border-input flex items-center gap-x-2 rounded-full border px-4 py-2 backdrop-blur">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-600 opacity-75"></span>
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>
+          </span>
+          <span className="text-sm">Available for a new project</span>
+        </div>
+
+        <div className="space-y-3 text-center md:space-y-4">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
+            Hey, I’m Yusuf Adeyemi
+          </h1>
+
+          <p className="text-foreground/90 text-xl sm:text-2xl md:text-3xl">
+            Fullstack Developer
+          </p>
+
+          <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base">
+            Creating digital products and elegant experiences
+          </p>
+
+          <Button className="px-6">Let’s Work Together! </Button>
+        </div>
+
+        <SocialIcons />
+
+        <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3">
+          <div className="border-muted-foreground/40 relative h-12 w-7 rounded-full border-2">
+            <div className="animate-scroll bg-muted-foreground/60 absolute top-3 left-1/2 h-2 w-1 -translate-x-1/2 rounded-full"></div>
           </div>
-        </div>
-
-        {/* Main Heading */}
-        <h1 className="mb-4 text-2xl md:text-6xl">Hey, I’m Yusuf Adeyemi</h1>
-
-        <p className="text-foreground/80 mb-2 text-2xl md:text-3xl">
-          {/* Software Engineer */}
-          Fullstack Developer
-        </p>
-
-        {/* Tagline */}
-        <p className="mx-auto mb-8 max-w-xl leading-relaxed">
-          Turning ideas into seamless digital experiences.
-        </p>
-
-        {/* CTA Buttons */}
-        <div className="mb-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button className="px-10 py-6">View My Work</Button>
-          <Button className="px-10 py-6" variant="outline">
-            Get in Touch
-          </Button>
-        </div>
-
-        {/* Social Icons */}
-        <div className="mb-8 flex items-center justify-center gap-6">
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-secondary-foreground hover:text-secondary-foreground/90 transition-transform duration-300 hover:scale-110"
-            aria-label="GitHub"
-          >
-            <Github size={30} />
-          </a>
-          <a
-            href="https://x.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-secondary-foreground hover:text-secondary-foreground/90 transition-transform duration-300 hover:scale-110"
-            aria-label="X"
-          >
-            <Twitter size={30} />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-secondary-foreground hover:text-secondary-foreground/90 transition-transform duration-300 hover:scale-110"
-            aria-label="Instagram"
-          >
-            <Instagram size={30} />
-          </a>
-        </div>
-
-        {/* Modern Scroll Indicator */}
-        <div className="border-secondary-foreground/10 mx-auto mt-20 flex h-[66px] w-[42px] items-start justify-center rounded-[28px] border-2 p-2">
-          {/* animated dot */}
-          <div className="bg-secondary-foreground/10 scroll-dot size-2 rounded-full" />
-        </div>
-
-        {/* little subtle chevron for extra hint (non-distracting) */}
-        <div className="mt-3 flex items-center justify-center gap-2 opacity-70">
-          <ChevronDown
-            size={30}
-            className="text-secondary-foreground/10 gentle-bounce"
-          />
+          <ChevronDown className="text-muted-foreground/60 size-6 animate-bounce" />
         </div>
       </div>
     </section>
