@@ -1,28 +1,65 @@
-export default function Skills() {
+import React from "react";
+import {
+  Code2,
+  Braces,
+  Atom,
+  Box,
+  FileCode,
+  Globe,
+  Palette,
+  GitBranch,
+  Database,
+  Container,
+  Cloud,
+  Leaf,
+} from "lucide-react";
+
+const Skills = () => {
+  const technologies = [
+    { name: "JavaScript", Icon: Braces },
+    { name: "TypeScript", Icon: Braces },
+    { name: "React", Icon: Atom },
+    { name: "Node.js", Icon: Box },
+    { name: "Python", Icon: FileCode },
+    { name: "HTML", Icon: Globe },
+    { name: "CSS", Icon: Palette },
+    { name: "Git", Icon: GitBranch },
+    { name: "SQL", Icon: Database },
+    { name: "Docker", Icon: Container },
+    { name: "AWS", Icon: Cloud },
+    { name: "MongoDB", Icon: Leaf },
+  ];
+
   return (
-    <div>
-      <h1>Skills</h1>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-        <li>TS</li>
-        <li>Tailwind CSS</li>
-        <li>React</li>
-        <li>Next</li>
-        <li>Nest</li>
-        <li>Node</li>
-        <li>Express</li>
-        <li>React Native</li>
-        <li>PostgresQL</li>
-        <li>MongoDB</li>
-        <li>Prisma</li>
-        <li>Mongoose</li>
-        <li>Zustand</li>
-        <li>React Query</li>
-        <li>Redux</li>
-        <li>Git and Github</li>
-      </ul>
-    </div>
+    <section className="mx-auto w-full py-20">
+      <div className="mx-auto max-w-3xl">
+        <h2 className="text-primary mb-4 text-xl md:text-4xl">Skills</h2>
+        <p className="text-muted-foreground mb-6 sm:text-lg md:text-xl">
+          Technologies I work with
+        </p>
+
+        <div className="grid grid-cols-3 gap-8 md:grid-cols-4 lg:grid-cols-5">
+          {technologies.map((tech) => {
+            const Icon = tech.Icon;
+            return (
+              <div
+                key={tech.name}
+                className="group bg-secondary border-border hover:bg-muted hover:border-primary flex cursor-pointer items-center justify-center gap-3 rounded-lg border px-2 py-2 transition-all duration-300"
+              >
+                <Icon
+                  className="text-muted-foreground group-hover:text-primary h-5 w-5 transition-colors duration-300"
+                  strokeWidth={1.5}
+                />
+                <span className="text-sm font-medium transition-colors duration-300">
+                  {tech.name}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
-}
+};
+
+export default Skills;

@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${jetbrainsMono.variable} mx-auto max-w-5xl font-normal antialiased`}
+        className={`${inter.className} ${jetbrainsMono.variable} mx-auto max-w-5xl border-x px-4 font-normal antialiased`}
       >
         <Header />
         <main>{children}</main>

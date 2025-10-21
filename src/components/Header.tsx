@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 z-50 mt-4 w-full">
-      <div className="mx-auto flex w-11/12 max-w-5xl items-center justify-between rounded-2xl border px-4 py-3 lg:py-4">
+      <div className="mx-auto flex w-11/12 max-w-[60rem] items-center justify-between rounded-2xl border px-4 py-3 backdrop-blur lg:py-4">
         <Logo />
 
         <Navbar />
