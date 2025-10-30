@@ -1,14 +1,14 @@
-import { ChevronDown, Dot } from "lucide-react";
-import { Button } from "./ui/button";
+import { ChevronDown } from "lucide-react";
 import SocialIcons from "./SocialIcons";
+import { Button } from "./ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-dvh px-4 pt-30 lg:pt-40">
+    <section className="caged-bg relative min-h-svh pt-30 lg:pt-40">
       {/* Background touches */}
       <>
-        <div className="absolute top-28 left-10 h-48 w-48 rounded-full bg-green-400 opacity-15 blur-3xl sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72 dark:bg-green-300"></div>
-        <div className="absolute right-10 bottom-20 h-64 w-64 rounded-full bg-green-400 opacity-10 blur-3xl sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96 dark:bg-green-300"></div>
+        <div className="absolute top-28 left-10 h-48 w-48 rounded-full bg-green-400 opacity-15 blur-3xl sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72"></div>
+        <div className="absolute right-10 bottom-20 h-64 w-64 rounded-full bg-green-400 opacity-10 blur-3xl sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96"></div>
       </>
 
       {/* Floating code symbols */}
@@ -36,17 +36,19 @@ export default function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-600 opacity-75"></span>
             <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>
           </span>
-          <span className="text-sm">Available for a new project</span>
+          <span className="text-sm">Available for work</span>
         </div>
 
-        <div className="space-y-3 text-center md:space-y-4">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
-            Hey, I’m Yusuf Adeyemi
-          </h1>
+        <div className="space-y-4 text-center md:space-y-4">
+          <div className="space-y-1">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
+              Hey, I’m Yusuf Adeyemi
+            </h1>
 
-          <p className="text-foreground/90 text-xl sm:text-2xl md:text-3xl">
-            Fullstack Developer
-          </p>
+            <p className="text-foreground/90 text-xl sm:text-2xl md:text-3xl">
+              Fullstack Developer
+            </p>
+          </div>
 
           <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base">
             Creating digital products and elegant experiences

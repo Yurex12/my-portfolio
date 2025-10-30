@@ -204,4 +204,28 @@
   .animate-scroll {
     animation: scroll 2.8s ease-in-out infinite;
   }
+
+  .caged-bg {
+    background:
+      repeating-linear-gradient(
+        0deg,
+        color-mix(in srgb, var(--foreground) 5%, transparent) 0,
+        color-mix(in srgb, var(--foreground) 5%, transparent) 1px,
+        transparent 1px,
+        transparent 50px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--foreground) 5%, transparent) 0,
+        color-mix(in srgb, var(--foreground) 5%, transparent) 1px,
+        transparent 1px,
+        transparent 50px
+      ),
+      linear-gradient(
+        to right,
+        transparent calc(100% - 1px),
+        color-mix(in srgb, var(--foreground) 5%, transparent) 100%
+      ),
+      var(--background);
+  }
 }
