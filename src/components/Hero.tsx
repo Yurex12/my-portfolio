@@ -39,13 +39,13 @@ export default function Hero() {
           <span className="text-sm">Available for work</span>
         </div>
 
-        <div className="space-y-4 text-center md:space-y-4">
-          <div className="space-y-1">
+        <div className="space-y-5 text-center">
+          <div className="space-y-2">
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
               Hey, I’m Yusuf Adeyemi
             </h1>
 
-            <p className="text-foreground/90 text-xl sm:text-2xl md:text-3xl">
+            <p className="text-foreground/90 text-xl font-medium sm:text-2xl md:text-3xl">
               Fullstack Developer
             </p>
           </div>

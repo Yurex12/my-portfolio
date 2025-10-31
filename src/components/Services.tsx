@@ -5,13 +5,13 @@ const Services = () => {
   const services = [
     {
       icon: Globe,
-      title: "Web Development",
+      title: "Web Application",
       description:
         "Building responsive, performant web applications with modern frameworks and best practices.",
     },
     {
       icon: Smartphone,
-      title: "App Development",
+      title: "Mobile Application",
       description:
         "Creating cross-platform mobile applications that deliver seamless user experiences.",
     },
@@ -34,7 +34,7 @@ const Services = () => {
                 className="text-primary mb-6 h-12 w-12 transition-colors duration-300"
                 strokeWidth={1.5}
               />
-              <h3 className="text-primary mb-3 text-2xl font-semibold">
+              <h3 className="text-primary mb-3 text-xl font-semibold">
                 {service.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
