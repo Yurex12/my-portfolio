@@ -16,7 +16,13 @@ export default function About() {
           products are designed, developed, and delivered
         </p>
       </div>
-      <img src="image.png" className="h-80 w-full rounded-sm object-cover" />
+
+      <div className="flex h-82 w-full flex-col rounded-md border">
+        <img src="image.png" className="h-70 flex-1 object-cover" />
+        <p className="text-foreground rounded-md py-4 text-center text-sm sm:text-base">
+          @ekungomiadeyemi
+        </p>
+      </div>
     </div>
   );
 }
