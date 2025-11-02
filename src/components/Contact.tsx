@@ -11,8 +11,8 @@ export default function Contact() {
         </p>
       </div>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-        <ContactForm />
         <div className="h-full w-full rounded-sm border"></div>
+        <ContactForm />
       </div>
     </div>
   );

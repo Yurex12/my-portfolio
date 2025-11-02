@@ -33,7 +33,7 @@ const Skills = () => {
   return (
     <section className="mx-auto w-full py-20">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-primary mb-4 text-xl md:text-4xl">Skills</h2>
+        <h1 className="text-primary mb-4 text-xl md:text-4xl">Skills</h1>
         <p className="text-muted-foreground mb-6 sm:text-lg md:text-xl">
           Technologies I work with
         </p>

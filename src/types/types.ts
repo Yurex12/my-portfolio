@@ -1,0 +1,14 @@
+export type Link = {
+  href: string;
+  name: string;
+};
+
+export type Project = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  tech: string[];
+  github: string;
+  live?: string;
+};
