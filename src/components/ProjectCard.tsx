@@ -2,6 +2,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { ExternalLink } from "lucide-react";
 
 import { Project } from "@/types/types";
+import { Button } from "./ui/button";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
@@ -17,13 +18,13 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div className="mt-4 flex flex-1 flex-col justify-between">
         <div className="space-y-2">
           <h3 className="text-lg font-medium">{project.title}</h3>
-          <p className="text-foreground/80 text-sm">{project.description}</p>
+          <p className="text-muted-foreground text-sm">{project.description}</p>
 
           <div className="flex flex-wrap gap-2 pt-2">
             {project.tech.map((t) => (
               <span
                 key={t}
-                className="rounded-full bg-green-100 px-3 py-1 text-xs text-green-700"
+                className="rounded-full bg-green-100 px-3 py-1 text-xs text-green-700 dark:bg-green-600/20 dark:text-green-300"
               >
                 {t}
               </span>
@@ -31,27 +32,29 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
         </div>
 
-        <div className="mt-4 flex items-center gap-4">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-            className="text-foreground/90 hover:bg-accent hover:text-accent-foreground inline-flex items-center gap-2 rounded-md border px-3 py-2 text-sm font-medium transition-colors"
+        <div className="mt-8 grid grid-cols-2 gap-4">
+          <Button
+            // href={project.github}
+            // target="_blank"
+            // rel="noreferrer"
+            // className="text-foreground/90 hover:bg-accent hover:text-accent-foreground inline-flex flex-1 items-center justify-center gap-2 rounded-md border px-3 py-2 text-sm font-medium transition-colors"
+            className="text-sm"
           >
-            <AiFillGithub size={18} />
-            <span>Code</span>
-          </a>
+            <ExternalLink size={18} />
+            <span>Live Demo</span>
+          </Button>
 
           {project.live && (
-            <a
-              href={project.live}
-              target="_blank"
-              rel="noreferrer"
-              className="text-foreground/90 hover:bg-accent hover:text-accent-foreground inline-flex items-center gap-2 rounded-md border px-3 py-2 text-sm font-medium transition-colors"
+            <Button
+              variant="secondary"
+              // href={project.live}
+              // target="_blank"
+              // rel="noreferrer"
+              // className="text-foreground/90 hover:bg-accent hover:text-accent-foreground inline-flex flex-1 items-center justify-center gap-2 rounded-md border px-3 py-2 text-sm font-medium transition-colors"
             >
-              <ExternalLink size={18} />
-              <span>Demo</span>
-            </a>
+              <AiFillGithub size={18} />
+              <span>Source Code</span>
+            </Button>
           )}
         </div>
       </div>
