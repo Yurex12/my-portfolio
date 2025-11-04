@@ -1,8 +1,9 @@
 "use client";
 
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { Button } from "./ui/button";
+import { Label } from "./ui/label";
 import { FormEvent } from "react";
 
 export default function ContactForm() {
@@ -12,9 +13,9 @@ export default function ContactForm() {
   return (
     <form className="space-y-4 rounded-md border p-4" onSubmit={handleSubmit}>
       <div>
-        <label className="text-primary mb-2 block text-sm font-medium">
+        <Label className="text-primary mb-2 block text-sm font-medium">
           Name
-        </label>
+        </Label>
         <Input
           type="text"
           className="py-5 shadow-none placeholder:text-sm"

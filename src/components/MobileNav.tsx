@@ -3,7 +3,7 @@ import {
   SheetContent,
   SheetDescription,
   SheetTitle,
-} from "@/components/ui/sheet";
+} from "./ui/sheet";
 import { links } from "@/constants";
 
 import { X } from "lucide-react";

@@ -12,3 +12,8 @@ export type Project = {
   github: string;
   live?: string;
 };
+
+export type Language = {
+  image: string;
+  name: string;
+};
