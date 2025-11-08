@@ -125,6 +125,10 @@
     scroll-behavior: smooth;
   }
 
+  section {
+    scroll-margin-top: 90px;
+  }
+
   h1,
   h2,
   h3,
@@ -134,10 +138,6 @@
     @apply text-foreground font-bold;
   }
 }
-
-/* section {
-  scroll-margin-top: 85px;
-} */
 
 @layer utilities {
   @keyframes float {

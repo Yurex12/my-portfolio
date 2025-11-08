@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const sectionIds = links.map((link) => link.href.slice(1));
 
-export function useActiveHash(offset: number = 100) {
+export function useActiveHash(offset: number = 85) {
   const [activeHash, setActiveHash] = useState("");
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section
-      className="mx-auto grid max-w-4xl gap-4 space-y-4 px-6 md:grid-cols-2 md:px-0"
+      className="mx-auto grid max-w-4xl grid-cols-1 gap-4 space-y-4 px-6 md:grid-cols-2 lg:px-0"
       id="about"
     >
       <div className="space-y-4">

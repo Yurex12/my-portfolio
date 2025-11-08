@@ -7,6 +7,7 @@ import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
 import { Button } from "./ui/button";
 import { Dialog } from "./ui/dialog";
+import { ModeToggle } from "./modeToggle";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -19,6 +20,7 @@ export default function Header() {
         <Navbar />
 
         <div className="text-foreground flex items-center gap-x-4 font-bold">
+          <ModeToggle className="hidden md:flex" />
           <Button>
             CV <Download />
           </Button>

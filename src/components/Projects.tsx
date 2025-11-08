@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   return (
     <section
-      className="mx-auto mt-4 max-w-4xl space-y-4 px-6 md:px-0"
+      className="mx-auto mt-4 max-w-4xl space-y-4 px-6 lg:px-0"
       id="projects"
     >
       <h2 className="text-2xl sm:text-3xl">Projects</h2>

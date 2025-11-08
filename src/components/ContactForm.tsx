@@ -1,9 +1,9 @@
 "use client";
 
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { Button } from "./ui/button";
-import { Label } from "./ui/label";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
 import { FormEvent } from "react";
 
 export default function ContactForm() {
@@ -12,6 +12,7 @@ export default function ContactForm() {
   }
   return (
     <form className="space-y-4 rounded-md border p-4" onSubmit={handleSubmit}>
+      <p className="text-primary text-xl font-semibold">Send message</p>
       <div>
         <Label className="text-primary mb-2 block text-sm font-medium">
           Name

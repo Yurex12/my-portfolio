@@ -1,4 +1,9 @@
-import { Language, Link, Project } from "@/types/types";
+import { Language, Link, Project, Service, SocialLink } from "@/types/types";
+import { Globe, Smartphone } from "lucide-react";
+import { BiGlobe } from "react-icons/bi";
+
+import { BsGithub, BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
+import { LuGlobe, LuSmartphone } from "react-icons/lu";
 
 export const links: Link[] = [
   { href: "#home", name: "Home" },
@@ -6,6 +11,36 @@ export const links: Link[] = [
   { href: "#projects", name: "Projects" },
   { href: "#skills", name: "Skills" },
   { href: "#contact", name: "Contact" },
+];
+
+export const services: Service[] = [
+  {
+    icon: LuGlobe,
+    title: "Web Application",
+    description:
+      "Building responsive, performant web applications with modern frameworks and best practices.",
+  },
+  {
+    icon: LuSmartphone,
+    title: "Mobile Application",
+    description:
+      "Creating cross-platform mobile applications that deliver seamless user experiences.",
+  },
+];
+
+export const socialLinks: SocialLink[] = [
+  { name: "GitHub", Icon: BsGithub, url: "https://github.com/yourname" },
+  {
+    name: "LinkedIn",
+    Icon: BsLinkedin,
+    url: "https://linkedin.com/in/yourname",
+  },
+  { name: "X", Icon: BsTwitterX, url: "https://x.com/yourhandle" },
+  {
+    name: "Instagram",
+    Icon: BsInstagram,
+    url: "https://instagram.com/yourhandle",
+  },
 ];
 
 export const projects: Project[] = [

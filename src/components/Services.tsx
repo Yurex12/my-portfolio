@@ -1,24 +1,8 @@
-import React from "react";
-import { Globe, Smartphone } from "lucide-react";
+import { services } from "@/constants";
 
-const Services = () => {
-  const services = [
-    {
-      icon: Globe,
-      title: "Web Application",
-      description:
-        "Building responsive, performant web applications with modern frameworks and best practices.",
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile Application",
-      description:
-        "Creating cross-platform mobile applications that deliver seamless user experiences.",
-    },
-  ];
-
+export default function Services() {
   return (
-    <section className="mx-auto max-w-4xl space-y-2 px-6 md:px-0">
+    <section className="mx-auto max-w-4xl space-y-2 px-6 lg:px-0">
       <h2 className="text-2xl sm:text-3xl">Services</h2>
       <p className="text-muted-foreground">What I can help you build</p>
 
@@ -46,6 +30,4 @@ const Services = () => {
       </div>
     </section>
   );
-};
-
-export default Services;
+}

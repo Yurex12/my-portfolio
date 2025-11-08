@@ -3,7 +3,7 @@ import { languages } from "@/constants";
 export default function Skills() {
   return (
     <section
-      className="mx-auto max-w-4xl space-y-2 rounded-md px-6 md:px-0"
+      className="mx-auto max-w-4xl space-y-2 rounded-md px-6 lg:px-0"
       id="skills"
     >
       <h2 className="flex items-center gap-2 text-2xl sm:text-3xl">
