@@ -2,7 +2,10 @@ import { languages } from "@/constants";
 
 export default function Skills() {
   return (
-    <div className="mx-auto max-w-4xl space-y-2 rounded-md px-6 md:px-0">
+    <section
+      className="mx-auto max-w-4xl space-y-2 rounded-md px-6 md:px-0"
+      id="skills"
+    >
       <h2 className="flex items-center gap-2 text-2xl sm:text-3xl">
         <span> Skills</span>{" "}
         <span className="text-muted-foreground text-sm">
@@ -26,6 +29,6 @@ export default function Skills() {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }

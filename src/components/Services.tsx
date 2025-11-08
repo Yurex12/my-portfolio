@@ -18,7 +18,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="mx-auto max-w-4xl space-y-2 px-6 md:px-0">
+    <section className="mx-auto max-w-4xl space-y-2 px-6 md:px-0">
       <h2 className="text-2xl sm:text-3xl">Services</h2>
       <p className="text-muted-foreground">What I can help you build</p>
 
@@ -44,7 +44,7 @@ const Services = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

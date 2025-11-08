@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <div className="mx-auto grid max-w-4xl gap-4 space-y-4 px-6 md:grid-cols-2 md:px-0">
+    <section
+      className="mx-auto grid max-w-4xl gap-4 space-y-4 px-6 md:grid-cols-2 md:px-0"
+      id="about"
+    >
       <div className="space-y-4">
         <h1 className="text-2xl sm:text-3xl">About</h1>
         <p>
@@ -23,6 +26,6 @@ export default function About() {
           @ekungomiadeyemi
         </p>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,10 +1,11 @@
-import { Language, Langugae, Link, Project } from "@/types/types";
+import { Language, Link, Project } from "@/types/types";
 
 export const links: Link[] = [
-  { href: "About", name: "About" },
-  { href: "Projects", name: "Projects" },
-  { href: "skills", name: "Skills" },
-  { href: "contact-me", name: "Contact" },
+  { href: "#home", name: "Home" },
+  { href: "#about", name: "About" },
+  { href: "#projects", name: "Projects" },
+  { href: "#skills", name: "Skills" },
+  { href: "#contact", name: "Contact" },
 ];
 
 export const projects: Project[] = [

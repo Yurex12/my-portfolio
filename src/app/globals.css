@@ -121,6 +121,10 @@
     @apply bg-background text-foreground/60 text-base font-normal;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   h1,
   h2,
   h3,
@@ -130,6 +134,10 @@
     @apply text-foreground font-bold;
   }
 }
+
+/* section {
+  scroll-margin-top: 85px;
+} */
 
 @layer utilities {
   @keyframes float {

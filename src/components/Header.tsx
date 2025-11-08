@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
 
-import { Download, Menu, Sun } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
 import { Button } from "./ui/button";
-import { Sheet } from "./ui/sheet";
+import { Dialog } from "./ui/dialog";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -22,12 +22,15 @@ export default function Header() {
           <Button>
             CV <Download />
           </Button>
-          <Sheet open={open} onOpenChange={setOpen}>
-            <button onClick={() => setOpen(true)} className="p-1">
-              <Menu className="block font-semibold sm:hidden" />
+          <Dialog open={open} onOpenChange={setOpen}>
+            <button onClick={() => setOpen(!open)} className="p-1">
+              <span className="block font-black sm:hidden">
+                {open ? <X /> : <Menu />}
+              </span>
             </button>
+
             <MobileNav onClose={handleClose} />
-          </Sheet>
+          </Dialog>
         </div>
       </div>
     </header>

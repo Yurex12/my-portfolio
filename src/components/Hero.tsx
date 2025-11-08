@@ -1,10 +1,11 @@
 import { ChevronDown } from "lucide-react";
 import SocialIcons from "./SocialIcons";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="caged-bg relative min-h-svh pt-30 lg:pt-40">
+    <section className="caged-bg relative min-h-svh pt-30 lg:pt-40" id="home">
       {/* Background touches */}
       <>
         <div className="absolute top-28 left-10 h-48 w-48 rounded-full bg-green-400 opacity-15 blur-3xl sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72"></div>
@@ -59,12 +60,15 @@ export default function Hero() {
 
         <SocialIcons />
 
-        <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3">
+        <Link
+          href="#about"
+          className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3"
+        >
           <div className="border-muted-foreground/40 relative h-12 w-7 rounded-full border-2">
             <div className="animate-scroll bg-muted-foreground/60 absolute top-3 left-1/2 h-2 w-1 -translate-x-1/2 rounded-full"></div>
           </div>
           <ChevronDown className="text-muted-foreground/60 size-6 animate-bounce" />
-        </div>
+        </Link>
       </div>
     </section>
   );

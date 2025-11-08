@@ -2,7 +2,7 @@ import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
-    <div className="mx-auto max-w-4xl px-6 md:px-0">
+    <section className="mx-auto max-w-4xl px-6 md:px-0" id="contact">
       <div className="mb-4 space-y-4">
         <h1 className="text-2xl sm:text-3xl">Get in touch</h1>
         <p>
@@ -14,6 +14,6 @@ export default function Contact() {
         <div className="h-full w-full rounded-sm border"></div>
         <ContactForm />
       </div>
-    </div>
+    </section>
   );
 }

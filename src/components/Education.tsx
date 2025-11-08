@@ -1,8 +1,6 @@
-import GithubLogo from "./GithubLogo";
-
 export default function Education() {
   return (
-    <div className="mx-auto max-w-4xl space-y-2 px-6 md:px-0">
+    <section className="mx-auto max-w-4xl space-y-2 px-6 md:px-0">
       <h1 className="text-2xl sm:text-3xl">Education</h1>
 
       <div className="flex flex-1 flex-col justify-between gap-2 border-b pb-2 md:flex-row">
@@ -20,6 +18,6 @@ export default function Education() {
           <span className="text-sm">Full-Time</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
