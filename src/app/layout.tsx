@@ -1,7 +1,10 @@
-import Header from "../components/Header";
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
+
+import Header from "../components/Header";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
@@ -36,6 +39,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Toaster position="top-center" />
           <Header />
           <main className="space-y-10">{children}</main>
         </ThemeProvider>

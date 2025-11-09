@@ -52,7 +52,7 @@ export default function Hero() {
           </div>
 
           <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base">
-            Creating digital products and elegant experiences
+            Turning ideas into reality with code
           </p>
 
           <Button className="px-6">Let’s Work Together! </Button>
