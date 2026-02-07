@@ -10,13 +10,13 @@ import { Label } from "@/components/ui/label";
 import { Spinner } from "./ui/spinner";
 import { toast } from "sonner";
 
+const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
+const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
+const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
+
 export default function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
   const [isSending, setIsSending] = useState(false);
-
-  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
-  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
-  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -88,7 +88,11 @@ export default function ContactForm() {
         />
       </div>
 
-      <Button type="submit" className="w-full py-5" disabled={isSending}>
+      <Button
+        type="submit"
+        className="w-full cursor-pointer py-5"
+        disabled={isSending}
+      >
         {isSending ? <Spinner /> : <span>Send Message</span>}
       </Button>
     </form>

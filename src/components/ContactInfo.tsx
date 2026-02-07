@@ -1,5 +1,5 @@
 import { socialLinks } from "@/constants";
-import { Mail, User } from "lucide-react";
+import { LocateIcon, Mail, Phone, User } from "lucide-react";
 
 export default function ContactInfo() {
   return (
@@ -11,19 +11,42 @@ export default function ContactInfo() {
         <div>
           <h3 className="text-foreground/90 font-normal">Ekungomi Yusuf</h3>
           <span className="text-muted-foreground text-xs md:text-sm">
-            Fullstack Developer
+            Software Developer
           </span>
         </div>
       </div>
 
-      <div className="flex items-center gap-4">
+      <a
+        className="flex items-center gap-4"
+        href="mailto:yusufekungomi@gmail.com"
+      >
         <Mail className="bg-foreground/5 text-foreground size-12 rounded-full p-2" />
         <div>
           <h3 className="text-foreground/90 font-normal">
             yusufekungomi@gmail.com
           </h3>
           <span className="text-muted-foreground text-xs md:text-sm">
-            Available for work
+            Email
+          </span>
+        </div>
+      </a>
+
+      <a href="tel:+2349016758057" className="flex items-center gap-4">
+        <Phone className="bg-foreground/5 text-foreground size-12 rounded-full p-2" />
+        <div>
+          <h3 className="text-foreground/90 font-normal">+234 9016758057</h3>
+          <span className="text-muted-foreground text-xs md:text-sm">
+            Phone
+          </span>
+        </div>
+      </a>
+
+      <div className="flex items-center gap-4">
+        <LocateIcon className="bg-foreground/5 text-foreground size-12 rounded-full p-2" />
+        <div>
+          <h3 className="text-foreground/90 font-normal">Lagos, Nigeria</h3>
+          <span className="text-muted-foreground text-xs md:text-sm">
+            Location
           </span>
         </div>
       </div>

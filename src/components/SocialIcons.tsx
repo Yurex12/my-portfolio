@@ -7,7 +7,7 @@ export default function SocialIcons() {
   return (
     <div className="flex items-center justify-center gap-x-6">
       <a
-        href="https://github.com"
+        href="https://github.com/yurex12"
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary hover:text-primary/90 transition-transform duration-300 hover:scale-110"
@@ -16,7 +16,7 @@ export default function SocialIcons() {
         <FiGithub size={25} />
       </a>
       <a
-        href="https://x.com"
+        href="https://x.com/0x_adeyemi"
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary hover:text-primary/90 transition-transform duration-300 hover:scale-110"
@@ -25,11 +25,11 @@ export default function SocialIcons() {
         <RiTwitterXFill size={25} />
       </a>
       <a
-        href="https://instagram.com"
+        href="mailto:yusufekungomi@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary hover:text-primary/90 transition-transform duration-300 hover:scale-110"
-        aria-label="Instagram"
+        aria-label="Email"
       >
         <GoMail size={25} />
       </a>

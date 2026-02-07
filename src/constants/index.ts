@@ -29,17 +29,17 @@ export const services: Service[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { name: "GitHub", Icon: BsGithub, url: "https://github.com/yourname" },
+  { name: "GitHub", Icon: BsGithub, url: "https://github.com/yurex12" },
   {
     name: "LinkedIn",
     Icon: BsLinkedin,
-    url: "https://linkedin.com/in/yourname",
+    url: "https://linkedin.com/in/yusuf-ekungomi-21ab23221",
   },
-  { name: "X", Icon: BsTwitterX, url: "https://x.com/yourhandle" },
+  { name: "X", Icon: BsTwitterX, url: "https://x.com/0x_adeyemi" },
   {
     name: "Instagram",
     Icon: BsInstagram,
-    url: "https://instagram.com/yourhandle",
+    url: "https://instagram.com/ekungomiadeyemi",
   },
 ];
 
@@ -49,21 +49,32 @@ export const projects: Project[] = [
     title: "Yurexpage",
     description:
       "A lightweight social feed with realtime-like UI, post reactions, and responsive layout.",
-    image: "beejaykeys.png",
+    image: "/beejaykeys.png",
     tech: ["Next.js", "TypeScript", "Tailwind", "Prisma"],
     github: "https://github.com/yourname/yurexpage",
     live: "https://example.com/yurexpage",
   },
 
   {
-    id: "p3",
-    title: "Dev Portfolio",
+    id: "p2",
+    title: "Nexura Store",
     description:
-      "Personal portfolio site with project showcase, blog, and contact form. Built for performance and accessibility.",
-    image: "beejaykeys.png",
+      "A full-stack e-commerce site with an admin dashboard to manage products, categories, and orders.",
+    image: "/nexura.png",
+    tech: ["React", "TypeScript", "Tailwind", "PostgreSQL", "Prisma"],
+    github: "https://github.com/yourname/nexura-store",
+    live: "https://nexurastore.vercel.app/",
+  },
+
+  {
+    id: "p3",
+    title: "FreshFarm",
+    description:
+      "A responsive website for a local farm featuring a Home, About, contact page.",
+    image: "/freshfarm.png",
     tech: ["React", "TypeScript", "Tailwind"],
-    github: "https://github.com/yourname/portfolio",
-    live: "https://yourname.dev",
+    github: "https://github.com/Yurex12/freshfarm",
+    live: "https://freshfarm.vercel.app",
   },
 ];
 

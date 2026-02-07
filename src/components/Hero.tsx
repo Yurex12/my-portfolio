@@ -47,7 +47,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-foreground/90 text-xl font-medium sm:text-2xl md:text-3xl">
-              Fullstack Developer
+              Software Developer
             </p>
           </div>
 
@@ -55,7 +55,9 @@ export default function Hero() {
             Turning ideas into reality with code
           </p>
 
-          <Button className="px-6">Let’s Work Together! </Button>
+          <Button className="px-6" asChild>
+            <Link href="#contact">Let’s Work Together! </Link>
+          </Button>
         </div>
 
         <SocialIcons />
