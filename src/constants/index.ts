@@ -50,7 +50,7 @@ export const projects: Project[] = [
     description:
       "A lightweight social feed with realtime-like UI, post reactions, and responsive layout.",
     image: "/beejaykeys.png",
-    tech: ["Next.js", "TypeScript", "Tailwind", "Prisma"],
+    tech: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "Prisma"],
     github: "https://github.com/yourname/yurexpage",
     live: "https://example.com/yurexpage",
   },
@@ -62,7 +62,7 @@ export const projects: Project[] = [
       "A full-stack e-commerce site with an admin dashboard to manage products, categories, and orders.",
     image: "/nexura.png",
     tech: ["React", "TypeScript", "Tailwind", "PostgreSQL", "Prisma"],
-    github: "https://github.com/yourname/nexura-store",
+    github: "https://github.com/Yurex12/yurexstore-ecommerce",
     live: "https://nexurastore.vercel.app/",
   },
 

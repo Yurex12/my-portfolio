@@ -8,25 +8,25 @@ export default function Hero() {
     <section className="caged-bg relative min-h-svh pt-30 lg:pt-40" id="home">
       {/* Background touches */}
       <>
-        <div className="absolute top-28 left-10 h-48 w-48 rounded-full bg-green-400 opacity-15 blur-3xl sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72"></div>
-        <div className="absolute right-10 bottom-20 h-64 w-64 rounded-full bg-green-400 opacity-10 blur-3xl sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96"></div>
+        <div className="pointer-events-none absolute top-28 left-10 h-48 w-48 rounded-full bg-green-400 opacity-15 blur-3xl sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72"></div>
+        <div className="pointer-events-none absolute right-10 bottom-20 h-64 w-64 rounded-full bg-green-400 opacity-10 blur-3xl sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96"></div>
       </>
 
       {/* Floating code symbols */}
       <>
-        <span className="text-primary/10 float-slow absolute top-[18%] left-[8%] font-mono text-4xl select-none sm:text-5xl md:text-6xl lg:text-7xl">
+        <span className="text-primary/10 float-slow pointer-events-none absolute top-[18%] left-[8%] font-mono text-4xl select-none sm:text-5xl md:text-6xl lg:text-7xl">
           {"{"}
         </span>
-        <span className="text-primary/10 float-slow absolute right-[12%] bottom-[15%] rotate-12 font-mono text-5xl select-none sm:text-6xl md:text-7xl lg:text-8xl">
+        <span className="text-primary/10 float-slow pointer-events-none absolute right-[12%] bottom-[15%] rotate-12 font-mono text-5xl select-none sm:text-6xl md:text-7xl lg:text-8xl">
           {"}"}
         </span>
-        <span className="text-primary/10 float-slow absolute top-[30%] right-[8%] -rotate-6 font-mono text-3xl select-none sm:text-4xl md:text-5xl lg:text-6xl">
+        <span className="text-primary/10 float-slow pointer-events-none absolute top-[30%] right-[8%] -rotate-6 font-mono text-3xl select-none sm:text-4xl md:text-5xl lg:text-6xl">
           {"();"}
         </span>
-        <span className="text-primary/10 float-slow absolute bottom-[25%] left-[15%] rotate-3 font-mono text-4xl select-none sm:text-5xl md:text-6xl lg:text-7xl">
+        <span className="text-primary/10 float-slow pointer-events-none absolute bottom-[25%] left-[15%] rotate-3 font-mono text-4xl select-none sm:text-5xl md:text-6xl lg:text-7xl">
           {"<>"}
         </span>
-        <span className="text-primary/10 float-slow absolute top-[13%] right-[25%] rotate-6 font-mono text-4xl select-none sm:text-5xl md:text-6xl lg:text-7xl">
+        <span className="text-primary/10 float-slow pointer-events-none absolute top-[13%] right-[25%] rotate-6 font-mono text-4xl select-none sm:text-5xl md:text-6xl lg:text-7xl">
           {"[]"}
         </span>
       </>

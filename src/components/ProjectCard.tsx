@@ -35,25 +35,25 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
 
         <div className="mt-8 grid grid-cols-2 gap-4">
-          <Button className="cursor-pointer gap-2 text-sm" asChild>
-            <a href={project.github} target="_blank" rel="noreferrer">
-              <ExternalLink size={18} />
-              <span>Live Demo</span>
-            </a>
-          </Button>
-
           {project.live && (
-            <Button
-              variant="secondary"
-              className="cursor-pointer text-sm"
-              asChild
-            >
+            <Button className="cursor-pointer gap-2 text-sm" asChild>
               <a href={project.live} target="_blank" rel="noreferrer">
-                <AiFillGithub size={18} />
-                <span>Source Code</span>
+                <ExternalLink size={18} />
+                <span>Live Demo</span>
               </a>
             </Button>
           )}
+
+          <Button
+            variant="secondary"
+            className="cursor-pointer text-sm"
+            asChild
+          >
+            <a href={project.github} target="_blank" rel="noreferrer">
+              <AiFillGithub size={18} />
+              <span>Source Code</span>
+            </a>
+          </Button>
         </div>
       </div>
     </li>
