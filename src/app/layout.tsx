@@ -19,8 +19,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Adeyemi Yusuf | Fullstack Developer",
-  description: "Portfolio of Adeyemi Yusuf - Fullstack Developer",
+  title: "Adeyemi Yusuf | Software Developer",
+  description: "Portfolio of Adeyemi Yusuf - Software Developer",
 };
 
 export default function RootLayout({
