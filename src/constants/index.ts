@@ -46,27 +46,6 @@ export const socialLinks: SocialLink[] = [
 export const projects: Project[] = [
   {
     id: "p1",
-    title: "Yurexpage",
-    description:
-      "A lightweight social feed with realtime-like UI, post reactions, and responsive layout.",
-    image: "/beejaykeys.png",
-    tech: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "Prisma"],
-    github: "https://github.com/yourname/yurexpage",
-    live: "https://example.com/yurexpage",
-  },
-  // {
-  //   id: "p1",
-  //   title: "Yurexpage",
-  //   description:
-  //     "A lightweight social feed with realtime-like UI, post reactions, and responsive layout.",
-  //   image: "/beejaykeys.png",
-  //   tech: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "Prisma"],
-  //   github: "https://github.com/yourname/yurexpage",
-  //   live: "https://example.com/yurexpage",
-  // },
-
-  {
-    id: "p2",
     title: "Nexura Store",
     description:
       "A full-stack e-commerce site with an admin dashboard to manage products, categories, and orders.",
@@ -83,10 +62,21 @@ export const projects: Project[] = [
     live: "https://nexurastore.vercel.app/",
   },
   {
+    id: "p2",
+    title: "Vox",
+    description:
+      "A social feed platform with real-time functionality, likes, comments, and media sharing",
+    image: "/vox.png",
+    tech: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "Prisma"],
+    github: "https://github.com/Yurex12/social-media-app",
+    live: "https://voxfeed.vercel.app",
+  },
+
+  {
     id: "p3",
     title: "BEEJAYKEYS",
     description:
-      "A full-stack portfolio with a custom admin panel to manage and update content in real-time.",
+      "A portfolio with a custom admin panel to manage and update content in real-time.",
     image: "/beejaykeys.png",
     tech: ["React", "TypeScript", "Tailwind", "Express", "MongoDB", "Mongoose"],
     github: "https://github.com/Yurex12/beejaykeys",

@@ -21,8 +21,10 @@ export default function Header() {
 
         <div className="text-foreground flex items-center gap-x-4 font-bold">
           <ModeToggle className="hidden md:flex" />
-          <Button>
-            CV <Download />
+          <Button asChild>
+            <a href="/EkungomiYusuf.pdf" download="EkungomiYusuf_CV.pdf">
+              CV <Download />
+            </a>
           </Button>
           <Dialog open={open} onOpenChange={setOpen}>
             <button onClick={() => setOpen(!open)} className="p-1">
