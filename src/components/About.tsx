@@ -16,7 +16,7 @@ export default function About() {
           Over time, I’ve worked with modern web technologies to build scalable
           and maintainable applications. I enjoy turning ideas into clean,
           efficient code and continuously learning new tools that improve how
-          products are designed, developed, and delivered
+          products are designed, developed, and delivered.
         </p>
       </div>
 
