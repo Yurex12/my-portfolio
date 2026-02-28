@@ -7,6 +7,8 @@ import "./globals.css";
 import Header from "../components/Header";
 import { ThemeProvider } from "@/components/theme-provider";
 
+import { Analytics } from "@vercel/analytics/next";
+
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -20,7 +22,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Adeyemi Yusuf | Software Developer",
-  description: "Portfolio of Adeyemi Yusuf - Software Developer",
+  description:
+    "Creative Software Developer with 3+ years of experience, specializing in web development and app development. Building scalable products with great user experiences.",
 };
 
 export default function RootLayout({
@@ -33,6 +36,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${jetbrainsMono.variable} light mx-auto max-w-5xl font-normal antialiased md:border-x`}
       >
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
