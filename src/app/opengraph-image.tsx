@@ -12,7 +12,7 @@ export default function Image() {
     (
       <div
         style={{
-          fontSize: 64,
+          fontSize: 80,
           background: "black",
           color: "white",
           width: "100%",

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description:
     "Creative Software Developer with 3+ years of experience, specializing in web development and app development. Building scalable products with great user experiences.",
   openGraph: {
-    title: "Yusuf | Software Developer",
+    title: "Adeyemi | Software Developer",
     description:
       "Creative Software Developer with 3+ years of experience, specializing in web development and app development. Building scalable products with great user experiences.",
     siteName: "adeyemid3v",
