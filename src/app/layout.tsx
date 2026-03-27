@@ -21,9 +21,17 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Adeyemi Yusuf | Software Developer",
+  title: "Yusuf Adeyemi | Software Developer",
   description:
     "Creative Software Developer with 3+ years of experience, specializing in web development and app development. Building scalable products with great user experiences.",
+  openGraph: {
+    title: "Yusuf | Software Developer",
+    description:
+      "Creative Software Developer with 3+ years of experience, specializing in web development and app development. Building scalable products with great user experiences.",
+    siteName: "adeyemid3v",
+    url: "https://adeyemid3v.vercel.app",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
